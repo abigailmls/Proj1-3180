@@ -1,0 +1,20 @@
+.backgroundcol{
+    background-color:#EAF2F8;
+}
+
+#container2{
+    /* display: grid; 
+    grid-template-columns: auto auto auto auto;  */
+    
+}
+#container3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px 290px;
+}
+
+.textbox{
+    padding-left: 300px;
+    padding-right:300px;
+}
+

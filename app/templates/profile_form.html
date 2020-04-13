@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block main %}
+
+<div id='div1'class="backgroundcol">
+<h2>Add Profile</h2>
+<hr>
+<form method="POST" action="{{ url_for('profile') }}" enctype="multipart/form-data"> 
+    {{ form.csrf_token }} 
+    
+<div id='div2'>
+<div class="textbox">
+    {{ form.firstname.label }}  <br>
+    {{form.firstname(class="form-control") }}
+</div>
+
+
+<div class="textbox">
+    {{ form.lastname.label }}  <br>
+    {{form.lastname(class="form-control") }}
+</div>
+
+
+<div class="textbox">
+    {{ form.gender.label }} <br>
+    {{form.gender(class="form-control") }}
+</div>
+
+
+<div class="textbox">
+    {{ form.email.label }}<br>
+    {{form.email(class="form-control") }}
+</div>
+<div class="textbox">
+    {{ form.location.label }} <br>
+    {{form.location(class="form-control") }}
+</div>
+<div class="textbox">
+    {{ form.bio.label }} <br>
+    {{form.bio(class='form-control') }}
+    
+</div>
+
+<div class="textbox">
+    {{ form.image.label }}<br> 
+    {{form.image(class='form-control') }}
+</div>
+
+<button type="submit" class="btn btn-primary" id='bttn'>Submit</button>
+
+</div>
+</form>
+</div>
+{% endblock %}

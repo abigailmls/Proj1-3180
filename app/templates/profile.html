@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block main %}
+
+<div>
+    <div id="container2">
+        <div id="container3">
+            <div>
+                <img src="{{url_for('static', filename='', width=100)}}" />
+            </div>
+        
+            <div>
+                <h2> {{user.first_name}} , {{user.last_name}}</h2>
+                <p>{{ user.location }}</p>
+            </div>
+        </div>
+            <div>
+                <h3>About Me</h3>
+                <p>Now you have the last hidden treasures to carve your own path
+                to sucess.</p>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" id='bttn1'>Send Message</button>
+                <span></span> <button type="submit" class="btn btn-primary" id='bttn2'>Follow</button>
+            </div>
+    </div>
+    
+</div>
+{% endblock %}
