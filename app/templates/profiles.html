@@ -6,9 +6,13 @@
         <h1> Profiles</h1>
         {%for profile in users%}
         <img src="{{ url_for('static', filename="uploads/"+profile.filename) }}" alt="" style= "width:500px;height:600px;">
-        <div>{{profile.first_name}}</div>
-        <div>{{profile.last_name}}</div>
-        <div></div>
+        <div class = "flex-container">
+            <div>{{profile.first_name}}{{profile.last_name}}</div>
+            <!-- <div>{{profile.last_name}}</div> -->
+            <div>{{profile.gender}}</div>
+            <div>{{profile.location}}</div>
+            <div></div>
+        </div>
         {% endfor %}
     </div>
     
